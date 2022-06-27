@@ -1,0 +1,578 @@
+.comment-container {
+  position: absolute;
+  top: calc(12vh);
+  left: calc(10vw);
+  width: calc(80vw);
+  height: auto;
+}
+
+.illusts-container {
+  height: auto;
+  border-radius: 8px;
+  background: white;
+  flex: 0 0 auto;
+  width: 912px;
+  font-size: 14px;
+  padding: 0;
+  position: relative;
+}
+
+.figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.illusts-container .preview-image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.preview-image-container .preview-image-position-container {
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  padding: 4px 4px 60px;
+  box-sizing: border-box;
+}
+
+.preview-image-position-container .preview-image-btn-container {
+  display: inline-flex;
+}
+
+.preview-image-btn-container .preview-image-btn-box {
+  padding: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease 0s;
+}
+
+.preview-image-btn-box .preview-image-btn {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  height: 20px;
+  min-width: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 0 6px;
+  background: rgba(0, 0, 0, 0.32);
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.illusts-container .pics-container {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  line-height: 0;
+  font-size: 0;
+  min-width: 200px;
+  min-height: calc((90vh - 48px) - 24px);
+  cursor: zoom-in;
+  background: rgba(0, 0, 0, 0.02);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.pics-container .single-img-container {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 912px;
+  max-height: 480px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.illusts-container .thumb-like-collect-share-btn-box {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.thumb-like-collect-share-btn-box .expand-button {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 64px 0 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.expand-button .expand-button-box {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  -webkit-mask-image: linear-gradient(transparent, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 0);
+}
+
+.expand-button .expand-button-text-box {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 40px;
+  min-width: 184px;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0 24px;
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+.thumb-like-collect-share-btn-box .t-l-c-s-b-section {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 8px 12px;
+  height: 48px;
+  box-sizing: border-box;
+  flex: 1 0 0;
+  background-color: white;
+}
+
+.t-l-c-s-b-section .more-btn-box {
+  position: relative;
+}
+
+.more-btn-box .more-btn {
+  background: transparent;
+  color: inherit;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.more-btn .more-svg {
+  stroke: none;
+  fill: currentcolor;
+  width: 32px;
+  height: 32px;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.t-l-c-s-b-section .share-btn-box {
+  position: relative;
+  margin-right: 10px;
+}
+
+.share-btn-box .share-btn {
+  background: transparent;
+  color: inherit;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.share-btn .share-svg {
+  stroke: none;
+  fill: currentcolor;
+  width: 32px;
+  height: 32px;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.t-l-c-s-b-section .like-btn-box {
+  display: flex;
+  margin-right: 13px;
+}
+
+.like-btn-box .like-btn {
+  display: block;
+  box-sizing: content-box;
+  padding: 0;
+  color: inherit;
+  background: none;
+  border: none;
+  line-height: 1;
+  height: 32px;
+  cursor: pointer;
+}
+
+.like-btn .like-svg-unliked {
+  box-sizing: border-box;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: top;
+  transition: color 0.2s ease 0s, fill 0.2s ease 0s;
+  color: inherit;
+  fill: currentcolor;
+}
+
+.like-svg-unliked .like-svg-path-unliked {
+  transition: fill 0.2s ease 0s;
+}
+
+.like-btn .like-svg-liked {
+  box-sizing: border-box;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: top;
+  transition: color 0.2s ease 0s, fill 0.2s ease 0s;
+  color: rgb(255, 64, 96);
+  fill: currentColor;
+}
+
+.like-svg-liked .like-svg-path-liked {
+  transition: fill 0.2s ease 0s;
+  fill: rgb(255, 64, 96);
+}
+
+.t-l-c-s-b-section .bookmark {
+  font-size: 34px;
+  line-height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bookmarkedColor {
+  color: rgb(255, 64, 96) !important;
+}
+
+.t-l-c-s-b-section .thumb-btn-box {
+  margin-right: 20px;
+  display: block;
+}
+
+.thumb-btn-box .thumb-btn {
+  display: inline-block;
+  padding: 0;
+  color: inherit;
+  background: none;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.thumb-btn .thumb-svg {
+  vertical-align: middle;
+  overflow: visible !important;
+  margin-right: 4px;
+  width: 12px;
+  font-size: 0;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+  fill: currentColor;
+}
+
+.thumb-btn .thumb-span {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0;
+  color: inherit;
+  background: none;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.illusts-container .illusts-info-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.illusts-info-box .illusts-info {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+.illusts-info:first-child {
+  margin-top: 32px;
+}
+
+.illusts-info .title-intro-tags-thumb-like-bookmark-view-box {
+  width: 600px;
+}
+
+.title-intro-tags-thumb-like-bookmark-view-box .title {
+  margin: 0 0 8px;
+  color: rgb(31, 31, 31);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+
+.title-intro-tags-thumb-like-bookmark-view-box .intro-box-out {
+  margin: 0 0 16px;
+  word-break: break-word;
+}
+
+.intro-box-out .intro-box-in {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.intro-box .intro {
+  margin: 0;
+  padding: 0;
+  border: none;
+  white-space: pre-wrap;
+  overflow: hidden;
+  max-height: 180px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.title-intro-tags-thumb-like-bookmark-view-box .tags-box {
+  display: flex;
+  margin: 16px 0;
+  color: rgb(173, 173, 173);
+  line-height: 18px;
+}
+
+.tags-box .tags-ul {
+  margin: 0 -6px 0 0;
+  list-style: none;
+  padding-left: 0;
+  word-break: break-all;
+}
+
+.tags-ul .tag-li {
+  display: inline;
+  margin: 0 12px 0 0;
+}
+
+.tag-li .tag-span {
+  color: rgb(61, 118, 153);
+}
+
+.tag::before {
+  content: "#";
+}
+
+.tag-span .tag {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tag-span .tag-translated {
+  display: inline-block;
+  color: rgb(173, 173, 173);
+  font-size: 12px;
+  margin: 0 0 0 4px;
+  padding: 0;
+  word-break: break-word;
+  text-decoration: none;
+  transition: color 0.2s ease 0s;
+}
+
+.tag-li .add-tag-btn {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  stroke: #3d7699;
+}
+
+.add-tag-btn .add-tag-svg {
+  /*stroke: inherit;*/
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+li {
+  flex: 0 0 auto;
+  margin: 0 8px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+dt {
+  display: block;
+  margin: 0 2px;
+  line-height: 0;
+  white-space: nowrap;
+  color: rgb(204, 204, 204);
+}
+
+dd {
+  display: block;
+  margin-inline-start: 40px;
+  margin: 0 2px;
+  line-height: 12px;
+  color: rgb(173, 173, 173);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.thumb-like-view-count {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 16px -4px;
+  list-style: none;
+  padding: 0;
+}
+
+.thumb-like-view-count .thumb-dl {
+  display: flex;
+  margin: 0 -4px;
+  line-height: 1;
+  color: rgb(173, 173, 173);
+  cursor: auto;
+}
+
+.thumb-like-view-count .bookmark-link {
+  display: flex;
+  margin: 0 -4px;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  -webkit-box-align: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.bookmark-link .bookmark-dl {
+  display: flex;
+  margin: 0 4px;
+  line-height: 1;
+  color: rgb(173, 173, 173);
+  cursor: pointer;
+}
+
+.bookmark-dl .bookmark-svg {
+  display: flex;
+  margin: 0 2px;
+  line-height: 1;
+  color: rgb(173, 173, 173);
+  cursor: pointer;
+}
+
+.thumb-like-view-count .view-dl {
+  display: flex;
+  margin: 0 -4px;
+  line-height: 1;
+  color: rgb(173, 173, 173);
+  cursor: auto;
+}
+
+.title-intro-tags-thumb-like-bookmark-view-box .submission-time {
+  color: rgb(173, 173, 173);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.artist-container {
+  position: absolute;
+  top: calc(12vh);
+  height: auto;
+  right: calc(0vw);
+  width: 288px;
+  flex: 0 0 auto;
+}
+
+.artist-container .artist-avatar-name-follow-btn-container {
+  height: calc(30vh);
+  position: relative;
+  top: 1%;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 0;
+  word-break: break-all;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+}
+
+.artist-container .follow-btn-box {
+  position: relative;
+  padding-top: 5%;
+}
+
+.artist-container .follow-btn-box .follow-btn {
+  padding: 9px 25px;
+  line-height: 1;
+  border: none;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.artist-container .comment-container-box {
+  position: relative;
+  padding: 0 10px;
+  left: 15%;
+  top: 5%;
+  background-color: deeppink;
+}

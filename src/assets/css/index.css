@@ -1,0 +1,19 @@
+body, html {
+  background: rgb(245, 245, 245);
+}
+
+.tab-container {
+  top: calc(11vh);
+  left: calc(10vw);
+  height: calc(5vh);
+  width: calc(80vw);
+  position: absolute;
+  background-color: transparent;
+}
+
+.waterfall-container {
+  width: calc(80vw);
+  left: calc(10vw);
+  top: calc(21vh);
+  position: absolute;
+}

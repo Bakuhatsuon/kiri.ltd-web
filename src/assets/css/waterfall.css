@@ -1,0 +1,88 @@
+.item {
+  margin-left: calc(1vw);
+  width: calc(18vw);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-mask-image: -webkit-radial-gradient(center, white, black);
+
+}
+
+.random-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.random-img:hover {
+  -webkit-filter: opacity(0.9);
+  filter: opacity(0.9);
+  transform: scale(1.2);
+}
+
+.Sxcoo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  padding: 4px 4px 0px;
+  pointer-events: none;
+}
+
+.liXhix {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.hHNegy {
+  margin-left: auto;
+}
+
+.kZlOCw {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  height: 20px;
+  min-width: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 0 6px;
+  background: rgba(0, 0, 0, 0.32);
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.gODLwk {
+  margin-right: 2px;
+}
+
+.gbNjFx {
+  display: inline-flex;
+  vertical-align: top;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 10px;
+}
+
+.fArvVr {
+  stroke: none;
+  fill: currentcolor;
+  width: 9px;
+  line-height: 0;
+  font-size: 0px;
+  vertical-align: middle;
+}

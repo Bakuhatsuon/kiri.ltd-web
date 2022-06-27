@@ -1,0 +1,104 @@
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(10vh);
+  background: transparent;
+}
+
+.more-button {
+  display: inline-block;
+  color: gray;
+  background: none;
+  border: none;
+  border-radius: 20px;
+  top: 30%;
+  left: 2%;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  transform: translate(0, -30%);
+  -o-transform: translate(0, -30%);
+  -ms-transform: translate(0, -30%);
+  -moz-transform: translate(0, -30%);
+  -webkit-transform: translate(0, -30%);
+  transition: all 0.5s;
+}
+
+.more-button:hover {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.close-more-button {
+  display: inline-block;
+  color: gray;
+  background: none;
+  border: none;
+  border-radius: 20px;
+  top: 3.5%;
+  left: 10.5%;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  transform: translate(0, -35%);
+  -o-transform: translate(0, -35%);
+  -ms-transform: translate(0, -35%);
+  -moz-transform: translate(0, -35%);
+  -webkit-transform: translate(0, -35%);
+}
+
+.close-more-button:hover {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.logo-container {
+  position: absolute;
+  top: 29%;
+  left: 6%;
+  width: 100px;
+  height: 45px;
+  transform: translate(0, -30%);
+  -o-transform: translate(0, -30%);
+  -ms-transform: translate(0, -30%);
+  -moz-transform: translate(0, -30%);
+  -webkit-transform: translate(0, -30%);
+}
+
+.drawer-logo-container {
+  position: absolute;
+  top: 3.5%;
+  left: 34%;
+  width: 100px;
+  height: 45px;
+  transform: translate(0, -35%);
+  -o-transform: translate(0, -35%);
+  -ms-transform: translate(0, -35%);
+  -moz-transform: translate(0, -35%);
+  -webkit-transform: translate(0, -35%);
+}
+
+.search-input {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: calc(50vw);
+  transform: translate(-50%, -30%);
+  -o-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  -moz-transform: translate(-50%, -30%);
+  -webkit-transform: translate(-50%, -30%);
+}
+
+.avatar-container {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  transform: translate(0, -30%);
+  -o-transform: translate(0, -30%);
+  -ms-transform: translate(0, -30%);
+  -moz-transform: translate(0, -30%);
+  -webkit-transform: translate(0, -30%);
+}
+
+
